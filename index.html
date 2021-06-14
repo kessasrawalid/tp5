@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Kessasra walid</title>
+    </head>
+    <body>
+        <form method="POST" action="insertion.php">
+			<h1>Restaurant virtuel</h1>
+			
+            <label>Tapez votre nom :</label>
+			<br/>
+            <input type="text" name="nom" placeholder="NOM CLIENT" required="required"/>
+			<br/>
+			
+            <label>Tapez votre e-mail :</label>
+			<br/>
+            <input type="email" name="mail" placeholder="MAIL CLIENT" required="required"/>
+			<br/>
+			
+			<br/>
+			<br/>
+			
+            <label>que désirez-vous comme entrée ?</label><br/>
+			<ul>
+				<li><input type="radio" name="entree" value="une salade" checked="checked" />
+					<label>une salade</label><br/>
+				</li>
+				<li><input type="radio" name="entree" value="une soupe">
+                    <label>une soupe</label><br/>
+				</li>
+				<li><input type="radio" name="entree" value="une omelette">
+                    <label>une omelette</label><br/>
+				</li>
+			</ul>	
+			
+			<br/>
+			
+			<label>que désirez-vous comme plat principale ?</label><br/>
+			<ul>
+				<li><input type="radio" name="plat-principal" value="du poulet"  />
+					<label>du poulet</label><br/>
+				</li>
+				<li><input type="radio" name="plat-principal" value="un steak">
+                    <label>un steak</label><br/>
+				</li>
+				<li><input type="radio" name="plat-principal" value="une roti" checked="checked">
+                    <label>une roti</label><br/>
+				</li>
+			</ul>
+			
+			<br/>
+			
+			<label>que désirez-vous comme dessert ?</label>
+			<br/>
+			<ul>
+				<li><input type="radio" name="dessert" value="un fruit" checked="checked" />
+					<label>un fruit</label><br/>
+				</li>
+				<li><input type="radio" name="dessert" value="un flan">
+                    <label>un flan</label><br/>
+				</li>
+				<li><input type="radio" name="dessert" value="un gateau">
+                    <label>un gateau</label><br/>
+				</li>
+			</ul>
+
+			<br/>
+			
+        <button type="submit" name="submit">Valider votre commande</button>            
+        </form>
+    </body>
+</html>
